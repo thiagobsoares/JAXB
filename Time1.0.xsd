@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="time" type="time" />
+
+	<xs:complexType name="time">
+		<xs:sequence>
+			<xs:element name="registroGeral" type="xs:long" minOccurs="1" />
+			<xs:element name="nome" type="xs:string" minOccurs="1" />
+			<xs:element name="estadio" type="estadio" minOccurs="1" />
+			<xs:element name="jogador" type="jogador" minOccurs="3"
+				maxOccurs="5" />
+			<xs:element name="valorMonetario" type="xs:decimal"
+				minOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<xs:complexType name="estadio">
+		<xs:sequence>
+			<xs:element name="nome" type="xs:string" minOccurs="1" />
+			<xs:element name="capacidade" type="xs:long" minOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="jogador">
+		<xs:sequence>
+			<xs:element name="matricula" type="xs:long" minOccurs="1" />
+			<xs:element name="nome" type="xs:string" minOccurs="1" />
+			<xs:element name="dataNascimento" type="xs:string"
+				minOccurs="1" />
+			<xs:element name="posicao" type="xs:string" minOccurs="1" />
+			<xs:element name="lesionado" type="xs:boolean" minOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

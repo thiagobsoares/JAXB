@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tns:time xmlns:tns="http://www.thiagosoares.com.br/time">
+    <registroGeral>3</registroGeral>
+    <nome>Palmeiras</nome>
+    <estadio>
+        <nome>Allianza</nome>
+        <capacidade>34000</capacidade>
+    </estadio>
+    <jogadores>
+        <jogador matricula="11">
+            <nome>Diego Araujo</nome>
+            <dataNascimento>1988-04-03</dataNascimento>
+            <posicao>ATAQUE</posicao>
+            <lesionado>false</lesionado>
+        </jogador>
+        <jogador matricula="12">
+            <nome>Rafael da Silva</nome>
+            <dataNascimento>1986-05-03</dataNascimento>
+            <posicao>ZAGUEIRO</posicao>
+            <lesionado>false</lesionado>
+        </jogador>
+        <jogador matricula="13">
+            <nome>Pedro Rodrigues</nome>
+            <dataNascimento>1985-03-26</dataNascimento>
+            <posicao>LATERAL</posicao>
+            <lesionado>false</lesionado>
+        </jogador>
+        <jogador matricula="14">
+            <nome>Anderson Silveira</nome>
+            <dataNascimento>1991-02-01</dataNascimento>
+            <posicao>MEIO_CAMPO</posicao>
+            <lesionado>false</lesionado>
+        </jogador>
+        <jogador matricula="15">
+            <nome>Thales Conceição</nome>
+            <dataNascimento>1990-07-11</dataNascimento>
+            <posicao>MEIO_CAMPO</posicao>
+            <lesionado>false</lesionado>
+        </jogador>
+    </jogadores>
+    <valorMonetario>47000000</valorMonetario>
+</tns:time>

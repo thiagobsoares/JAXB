@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://www.thiagosoares.com.br/time"
+	xmlns:tns="http://www.thiagosoares.com.br/time" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="time" type="tns:time" />
+
+	<xs:complexType name="time">
+		<xs:all>
+			<xs:element name="registroGeral" type="xs:int" minOccurs="0" />
+			<xs:element name="nome" type="xs:string" minOccurs="0" />
+			<xs:element name="estadio" type="tns:estadio" minOccurs="0" />
+			<xs:element name="jogadores" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="jogador" type="tns:jogador"
+							minOccurs="0" maxOccurs="unbounded" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="valorMonetario" type="tns:valorMonetario"
+				minOccurs="0" />
+		</xs:all>
+	</xs:complexType>
+
+	<xs:complexType name="estadio">
+		<xs:sequence>
+			<xs:element name="nome" type="xs:string" minOccurs="0" />
+			<xs:element name="capacidade" type="xs:integer" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="jogador">
+		<xs:sequence>
+			<xs:element name="nome" type="xs:string" minOccurs="0" />
+			<xs:element name="dataNascimento" type="tns:dataNascimento"
+				minOccurs="0" />
+			<xs:element name="posicao" type="tns:posicao" minOccurs="0" />
+			<xs:element name="lesionado" type="xs:boolean" minOccurs="0" />
+		</xs:sequence>
+		<xs:attribute name="matricula" type="xs:int" />
+	</xs:complexType>
+
+	<xs:simpleType name="posicao">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ATAQUE" />
+			<xs:enumeration value="MEIO_CAMPO" />
+			<xs:enumeration value="LATERAL" />
+			<xs:enumeration value="ZAGUEIRO" />
+			<xs:enumeration value="GOLEIRO" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="dataNascimento">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9]{4}-[0-9]{1,2}-[0-9]{1,2}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="valorMonetario">
+		<xs:restriction base="xs:decimal">
+			<xs:minExclusive value="0"/>
+			<xs:fractionDigits value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
+

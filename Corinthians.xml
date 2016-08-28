@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tns:time xmlns:tns="http://www.thiagosoares.com.br/time">
+	<registroGeral>4</registroGeral>
+	<nome>Corinthians</nome>
+	<estadio>
+		<nome>Arena Corinthians</nome>
+		<capacidade>40000</capacidade>
+	</estadio>
+	<jogadores>
+		<jogador matricula="16">
+			<nome>Ribeiro Nunes</nome>
+			<dataNascimento>1995-12-20</dataNascimento>
+			<posicao>ATAQUE</posicao>
+			<lesionado>false</lesionado>
+		</jogador>
+		<jogador matricula="17">
+			<nome>Carlos Pedrosa</nome>
+			<dataNascimento>1983-10-10</dataNascimento>
+			<posicao>ZAGUEIRO</posicao>
+			<lesionado>true</lesionado>
+		</jogador>
+	</jogadores>
+	<valorMonetario>170000000</valorMonetario>
+</tns:time>

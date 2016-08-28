@@ -1,0 +1,1 @@
+xjc Time2.0.xsd -d src -p br.com.thiagosoares.estudo.generated

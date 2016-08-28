@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tns:time xmlns:tns="http://www.thiagosoares.com.br/time">
+    <registroGeral>2</registroGeral>
+    <nome>São Paulo</nome>
+    <estadio>
+        <nome>Morumbi</nome>
+        <capacidade>60000</capacidade>
+    </estadio>
+    <jogadores>
+        <jogador matricula="6">
+            <nome>Andre Ribeiro</nome>
+            <dataNascimento>1975-02-20</dataNascimento>
+            <posicao>ATAQUE</posicao>
+            <lesionado>false</lesionado>
+        </jogador>
+        <jogador matricula="7">
+            <nome>Pedro Carlos</nome>
+            <dataNascimento>1993-10-30</dataNascimento>
+            <posicao>GOLEIRO</posicao>
+            <lesionado>false</lesionado>
+        </jogador>
+        <jogador matricula="8">
+            <nome>Fernando Silva</nome>
+            <dataNascimento>1983-11-17</dataNascimento>
+            <posicao>ZAGUEIRO</posicao>
+            <lesionado>false</lesionado>
+        </jogador>
+        <jogador matricula="9">
+            <nome>Bruno Fernandes</nome>
+            <dataNascimento>1985-12-24</dataNascimento>
+            <posicao>ZAGUEIRO</posicao>
+            <lesionado>false</lesionado>
+        </jogador>
+        <jogador matricula="10">
+            <nome>Thomas da Silva</nome>
+            <dataNascimento>1987-03-24</dataNascimento>
+            <posicao>LATERAL</posicao>
+            <lesionado>true</lesionado>
+        </jogador>
+    </jogadores>
+    <valorMonetario>70000000</valorMonetario>
+</tns:time>
